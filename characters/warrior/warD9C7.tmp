@@ -1,0 +1,66 @@
+[gd_scene load_steps=7 format=3 uid="uid://blpaar276ow40"]
+
+[ext_resource type="Script" path="res://characters/warrior/warrior_script.gd" id="1_m0xix"]
+[ext_resource type="Texture2D" uid="uid://cnqurw5s2r6p4" path="res://sprites/characters/warrior/idle/warrior_idle_0001.png" id="1_uec51"]
+[ext_resource type="Texture2D" uid="uid://eiapt8wig2bx" path="res://sprites/characters/warrior/idle/warrior_idle_0002.png" id="2_7ndgc"]
+[ext_resource type="PackedScene" uid="uid://bkciy8i7jfgci" path="res://weapons/sword/sword.tscn" id="4_71cy0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kwkp2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7ndgc")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_uec51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7ndgc")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 1.8
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_uec51")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4y1sy"]
+size = Vector2(10.6667, 16.8333)
+
+[node name="Warrior" type="CharacterBody2D"]
+scale = Vector2(6, 6)
+script = ExtResource("1_m0xix")
+metadata/_edit_vertical_guides_ = [-239.0]
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_kwkp2")
+animation = &"idle"
+offset = Vector2(5, 0)
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.5, 0.583334)
+shape = SubResource("RectangleShape2D_4y1sy")
+
+[node name="Camera" type="Camera2D" parent="."]
+offset = Vector2(0, -180)
+limit_smoothed = true
+position_smoothing_enabled = true
+position_smoothing_speed = 12.0
+rotation_smoothing_enabled = true
+
+[node name="Sword" parent="." instance=ExtResource("4_71cy0")]
+z_index = 100
+position = Vector2(17, -2.83333)

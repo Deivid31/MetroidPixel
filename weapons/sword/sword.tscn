@@ -1,0 +1,51 @@
+[gd_scene load_steps=10 format=3 uid="uid://bkciy8i7jfgci"]
+
+[ext_resource type="Script" path="res://weapons/sword/sword.gd" id="1_crdlj"]
+[ext_resource type="Texture2D" uid="uid://c0la6xlfleifa" path="res://sprites/weapons/sword/sword_0001.png" id="1_vgduw"]
+[ext_resource type="Texture2D" uid="uid://btcl7ejg6ujc4" path="res://sprites/weapons/sword/sword_0002.png" id="2_c0t0l"]
+[ext_resource type="Texture2D" uid="uid://bspw4w31kt0w6" path="res://sprites/weapons/sword/sword_0003.png" id="3_b7drq"]
+[ext_resource type="Texture2D" uid="uid://d3segmh18i5km" path="res://sprites/weapons/sword/sword_0004.png" id="4_1gqgi"]
+[ext_resource type="Texture2D" uid="uid://cbj5m8ki824s1" path="res://sprites/weapons/sword/sword_0005.png" id="5_ntpyo"]
+[ext_resource type="Texture2D" uid="uid://c4gn2haywbgql" path="res://sprites/weapons/sword/sword_0006.png" id="6_rsn27"]
+[ext_resource type="Texture2D" uid="uid://c8wjho5kujl84" path="res://sprites/weapons/sword/sword_0007.png" id="7_3oguu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qb6ak"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vgduw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_c0t0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_b7drq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1gqgi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ntpyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rsn27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3oguu")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 100.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"static",
+"speed": 5.0
+}]
+
+[node name="Sword" type="AnimatedSprite2D"]
+visible = false
+rotation = 1.5708
+sprite_frames = SubResource("SpriteFrames_qb6ak")
+animation = &"attack"
+script = ExtResource("1_crdlj")

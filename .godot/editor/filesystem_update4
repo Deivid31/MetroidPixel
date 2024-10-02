@@ -1,0 +1,4 @@
+res://maps/test_map.tscn
+res://characters/warrior/warrior.tscn
+res://weapons/sword/sword.tscn
+res://characters/warrior/warrior_script.gd

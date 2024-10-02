@@ -1,0 +1,10 @@
+PhantomCamera2D
+AnimatedSprite2D
+ColorRect
+CanvasLayer
+RigidBody2D
+Camera2D
+CollisionShape2D
+Sprite2D
+CharacterBody2D
+TileMap

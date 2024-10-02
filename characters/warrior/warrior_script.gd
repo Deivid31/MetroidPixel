@@ -1,36 +1,46 @@
 extends CharacterBody2D
 
+@onready var sword = get_node("Sword")
+@onready var sprite = get_node("Sprite")
+
 var movement = true
-var gravity = 125
+var gravity = 100
 var speed = 800
 
 func _ready():
-	%Sprite.play()
+	sprite.play()
 
 
 func _process(delta):
-	
 	velocity.y += gravity
 	
-	if Input.is_action_pressed("move_left"):
+	if Input.is_action_pressed("move_left") and movement:
 		velocity.x = -speed
-		%Sprite.animation = "walk"
-		%Sprite.flip_h = false
-		%Sprite.offset = Vector2(0, 0)
+		sprite.animation = "walk"
+		sprite.flip_h = false
+		sprite.offset = Vector2(0, 0)
 		
 	elif Input.is_action_pressed("move_right"):
 		velocity.x = speed
-		%Sprite.animation = "walk"
-		%Sprite.flip_h = true
-		%Sprite.offset = Vector2(5, 0)
+		sprite.animation = "walk"
+		sprite.flip_h = true
+		sprite.offset = Vector2(5, 0)
+		
+	elif sprite.animation != "attack":
+		sprite.animation = "idle"
+		velocity.x = 0
 		
 	else:
-		%Sprite.animation = "idle"
 		velocity.x = 0
 	
 	
 	if Input.is_action_pressed("jump") and is_on_floor():
-		velocity.y = -2000
+		velocity.y = -1700
+	
+	
+	if Input.is_action_just_pressed("attack") and movement:
+		sword.attack(1, sprite.flip_h)
+		sprite.play("attack")
 	
 	
 	if Input.is_action_just_pressed("menu"):
