@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://blpaar276ow40"]
+[gd_scene load_steps=9 format=3 uid="uid://blpaar276ow40"]
 
 [ext_resource type="Script" path="res://characters/warrior/warrior_script.gd" id="1_m0xix"]
 [ext_resource type="Texture2D" uid="uid://cnqurw5s2r6p4" path="res://sprites/characters/warrior/idle/warrior_idle_0001.png" id="1_uec51"]
@@ -6,8 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://b45226j36wvyj" path="res://sprites/characters/warrior/walk/warrior_walk_0001.png" id="4_18tva"]
 [ext_resource type="PackedScene" uid="uid://bkciy8i7jfgci" path="res://weapons/sword/sword.tscn" id="4_71cy0"]
 [ext_resource type="Texture2D" uid="uid://27h4mf8lbd7s" path="res://sprites/characters/warrior/walk/warrior_walk_0002.png" id="5_2pbyh"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="5_aglfo"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="6_1foyo"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kwkp2"]
 animations = [{
@@ -45,12 +43,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4y1sy"]
 size = Vector2(10.6667, 16.8333)
 
-[sub_resource type="Resource" id="Resource_bt65m"]
-script = ExtResource("6_1foyo")
-duration = 1.0
-transition = 0
-ease = 2
-
 [node name="Warrior" type="CharacterBody2D"]
 scale = Vector2(6, 6)
 script = ExtResource("1_m0xix")
@@ -63,22 +55,14 @@ animation = &"walk"
 offset = Vector2(5, 0)
 flip_h = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="HitBox" type="CollisionShape2D" parent="."]
 position = Vector2(2.5, 0.583334)
 shape = SubResource("RectangleShape2D_4y1sy")
-
-[node name="Camera" type="Camera2D" parent="."]
-visible = false
-offset = Vector2(0, -180)
-limit_smoothed = true
-position_smoothing_enabled = true
-position_smoothing_speed = 12.0
-rotation_smoothing_enabled = true
 
 [node name="Sword" parent="." instance=ExtResource("4_71cy0")]
 z_index = 100
 position = Vector2(-3, 0)
 
-[node name="PhantomCamera2D" type="Node2D" parent="."]
-script = ExtResource("5_aglfo")
-tween_resource = SubResource("Resource_bt65m")
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -8.33333)
+offset = Vector2(0, -50)

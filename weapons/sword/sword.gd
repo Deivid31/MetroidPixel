@@ -22,11 +22,13 @@ func attack(damage, flip):
 	if !visible:
 		if flip:
 			flip_h = true
+			%DamageBox.position.x = 10
 			position = Vector2(10, 0)
 			rotation = -64.5
 		else:
-			position = Vector2(-4, 0)
 			flip_h = false
+			%DamageBox.position.x = -10
+			position = Vector2(-4, 0)
 			rotation = 64.5
 		visible = true
 		play("attack")
