@@ -51,7 +51,7 @@ metadata/_edit_vertical_guides_ = [-239.0]
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_kwkp2")
-animation = &"walk"
+animation = &"idle"
 offset = Vector2(5, 0)
 flip_h = true
 
