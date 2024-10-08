@@ -1,11 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://blpaar276ow40"]
+[gd_scene load_steps=10 format=3 uid="uid://blpaar276ow40"]
 
 [ext_resource type="Script" path="res://characters/warrior/warrior_script.gd" id="1_m0xix"]
-[ext_resource type="Texture2D" uid="uid://cnqurw5s2r6p4" path="res://sprites/characters/warrior/idle/warrior_idle_0001.png" id="1_uec51"]
-[ext_resource type="Texture2D" uid="uid://eiapt8wig2bx" path="res://sprites/characters/warrior/idle/warrior_idle_0002.png" id="2_7ndgc"]
-[ext_resource type="Texture2D" uid="uid://b45226j36wvyj" path="res://sprites/characters/warrior/walk/warrior_walk_0001.png" id="4_18tva"]
-[ext_resource type="PackedScene" uid="uid://bkciy8i7jfgci" path="res://weapons/sword/sword.tscn" id="4_71cy0"]
-[ext_resource type="Texture2D" uid="uid://27h4mf8lbd7s" path="res://sprites/characters/warrior/walk/warrior_walk_0002.png" id="5_2pbyh"]
+[ext_resource type="Texture2D" uid="uid://cnqurw5s2r6p4" path="res://characters/warrior/idle/warrior_idle_0001.png" id="1_uec51"]
+[ext_resource type="Texture2D" uid="uid://eiapt8wig2bx" path="res://characters/warrior/idle/warrior_idle_0002.png" id="2_7ndgc"]
+[ext_resource type="Texture2D" uid="uid://b45226j36wvyj" path="res://characters/warrior/walk/warrior_walk_0001.png" id="4_18tva"]
+[ext_resource type="PackedScene" uid="uid://bkciy8i7jfgci" path="res://characters/warrior/sword/sword.tscn" id="4_71cy0"]
+[ext_resource type="Texture2D" uid="uid://27h4mf8lbd7s" path="res://characters/warrior/walk/warrior_walk_0002.png" id="5_2pbyh"]
+[ext_resource type="Script" path="res://characters/warrior/sword/sword.gd" id="7_skham"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kwkp2"]
 animations = [{
@@ -62,6 +63,7 @@ shape = SubResource("RectangleShape2D_4y1sy")
 [node name="Sword" parent="." instance=ExtResource("4_71cy0")]
 z_index = 100
 position = Vector2(-3, 0)
+script = ExtResource("7_skham")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -8.33333)
