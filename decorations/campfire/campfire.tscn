@@ -1,0 +1,59 @@
+[gd_scene load_steps=12 format=3 uid="uid://vx7vlkse1jk"]
+
+[ext_resource type="Texture2D" uid="uid://dmhfnsi17ngl1" path="res://decorations/campfire/campfire_off.png" id="1_7fir5"]
+[ext_resource type="Texture2D" uid="uid://c0woxxknd7hqy" path="res://decorations/campfire/campfire_0001.png" id="2_mxohx"]
+[ext_resource type="Texture2D" uid="uid://bwlef7lpcpa6t" path="res://decorations/campfire/campfire_0002.png" id="3_rjnx3"]
+[ext_resource type="Texture2D" uid="uid://d1qfq3dtuiw3m" path="res://decorations/campfire/campfire_0003.png" id="4_t66lc"]
+[ext_resource type="Texture2D" uid="uid://dgvy7fn5xw4o2" path="res://decorations/campfire/campfire_0004.png" id="5_8kae8"]
+[ext_resource type="Texture2D" uid="uid://bde4ckg011xm0" path="res://decorations/campfire/campfire_0005.png" id="6_og726"]
+[ext_resource type="Texture2D" uid="uid://cerlwediwqsfr" path="res://decorations/campfire/campfire_0006.png" id="7_yj62o"]
+[ext_resource type="Texture2D" uid="uid://ds4sofdm2sqr5" path="res://decorations/campfire/campfire_0007.png" id="8_pdewd"]
+[ext_resource type="Texture2D" uid="uid://dxg7rh0ssvb27" path="res://decorations/campfire/campfire_0008.png" id="9_8bshw"]
+[ext_resource type="Script" path="res://decorations/campfire/campfire.gd" id="10_ftsol"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d1pyo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7fir5")
+}],
+"loop": false,
+"name": &"off",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mxohx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rjnx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_t66lc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8kae8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_og726")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_yj62o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pdewd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8bshw")
+}],
+"loop": true,
+"name": &"on",
+"speed": 8.0
+}]
+
+[node name="Campfire" type="AnimatedSprite2D"]
+z_index = 1
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_d1pyo")
+animation = &"off"
+script = ExtResource("10_ftsol")

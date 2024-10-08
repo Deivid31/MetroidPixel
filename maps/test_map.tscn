@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://2384vxrh3t8q"]
+[gd_scene load_steps=8 format=3 uid="uid://2384vxrh3t8q"]
 
 [ext_resource type="Texture2D" uid="uid://bcjqbxob33lhq" path="res://tiles/decorations/fence/fence_pack.png" id="1_t7gtf"]
 [ext_resource type="PackedScene" uid="uid://blpaar276ow40" path="res://characters/warrior/warrior.tscn" id="2_c5mqx"]
 [ext_resource type="Texture2D" uid="uid://w4sl5d7p7u13" path="res://tiles/terrain/terrain_pack.png" id="2_yyn4x"]
+[ext_resource type="PackedScene" uid="uid://vx7vlkse1jk" path="res://decorations/campfire/campfire.tscn" id="4_vm7ba"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_etls0"]
 texture = ExtResource("1_t7gtf")
@@ -148,6 +149,7 @@ sources/0 = SubResource("TileSetAtlasSource_etls0")
 [node name="test_map" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
+z_index = -100
 offset_left = -1394.0
 offset_top = -863.0
 offset_right = 3425.0
@@ -163,3 +165,6 @@ layer_0/tile_data = PackedInt32Array(458754, 1, 2, 524290, 1, 2, 589826, 1, 2, 6
 
 [node name="Warrior" parent="." instance=ExtResource("2_c5mqx")]
 position = Vector2(320, 521)
+
+[node name="Campfire" parent="." instance=ExtResource("4_vm7ba")]
+position = Vector2(335, 528)
