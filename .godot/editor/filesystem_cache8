@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728398981
+::res://::1728399257
 icon.png::CompressedTexture2D::6386233921937961406::1728312575::1728312661::1::::<><>::
 ::res://characters/::1728398672
 ::res://characters/axe/::1728314493
@@ -23,7 +23,7 @@ warrior_idle_0001.png::CompressedTexture2D::5719572279809750927::1728312575::172
 warrior_idle_0002.png::CompressedTexture2D::297298233425916757::1728312575::1728398624::1::::<><>::
 ::res://characters/warrior/sword/::1728398821
 sword.gd::GDScript::-1::1728312575::0::1::::<>AnimatedSprite2D<>::
-sword.tscn::PackedScene::3092968217672547868::1728312575::0::1::::<><>::res://weapons/sword/sword.gd<>uid://c0la6xlfleifa::::res://sprites/weapons/sword/sword_0001.png<>uid://btcl7ejg6ujc4::::res://sprites/weapons/sword/sword_0002.png<>uid://bspw4w31kt0w6::::res://sprites/weapons/sword/sword_0003.png<>uid://d3segmh18i5km::::res://sprites/weapons/sword/sword_0004.png<>uid://cbj5m8ki824s1::::res://sprites/weapons/sword/sword_0005.png<>uid://c4gn2haywbgql::::res://sprites/weapons/sword/sword_0006.png<>uid://c8wjho5kujl84::::res://sprites/weapons/sword/sword_0007.png
+sword.tscn::PackedScene::3092968217672547868::1728399244::0::1::::<><>::res://characters/warrior/sword/sword.gd<>uid://c0la6xlfleifa::::res://characters/warrior/sword/sword_0001.png<>uid://btcl7ejg6ujc4::::res://characters/warrior/sword/sword_0002.png<>uid://bspw4w31kt0w6::::res://characters/warrior/sword/sword_0003.png<>uid://d3segmh18i5km::::res://characters/warrior/sword/sword_0004.png<>uid://cbj5m8ki824s1::::res://characters/warrior/sword/sword_0005.png<>uid://c4gn2haywbgql::::res://characters/warrior/sword/sword_0006.png<>uid://c8wjho5kujl84::::res://characters/warrior/sword/sword_0007.png
 sword_0001.png::CompressedTexture2D::6550327198514666362::1728312575::1728398714::1::::<><>::
 sword_0002.png::CompressedTexture2D::3724862724960699541::1728312575::1728398714::1::::<><>::
 sword_0003.png::CompressedTexture2D::3682174297316372455::1728312575::1728398714::1::::<><>::
@@ -42,6 +42,7 @@ warrior_walk_0002.png::CompressedTexture2D::1961636312847730806::1728312575::172
 ::res://enemies/mushroom/walk/::1728314769
 ::res://maps/::1728398827
 test_map.tscn::PackedScene::1954957943428818158::1728398827::0::1::::<><>::uid://bcjqbxob33lhq::::res://tiles/decorations/fence/fence_pack.png<>uid://blpaar276ow40::::res://characters/warrior/warrior.tscn<>uid://w4sl5d7p7u13::::res://tiles/terrain/terrain_pack.png
+::res://npc/::1728399046
 ::res://random/::1728398672
 ::res://random/all_characters/::1728398675
 all_characters.png::CompressedTexture2D::805626091233553556::1728312575::1728398675::1::::<><>::
