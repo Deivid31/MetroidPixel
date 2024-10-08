@@ -1,1 +1,4 @@
 res://characters/warrior/warrior.tscn
+res://maps/test_map.tscn
+res://menus/pause.tscn
+res://menus/pause.gd
