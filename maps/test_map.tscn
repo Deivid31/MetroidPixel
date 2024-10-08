@@ -167,4 +167,4 @@ layer_0/tile_data = PackedInt32Array(458754, 1, 2, 524290, 1, 2, 589826, 1, 2, 6
 position = Vector2(320, 521)
 
 [node name="Campfire" parent="." instance=ExtResource("4_vm7ba")]
-position = Vector2(335, 528)
+position = Vector2(1391, 330)
