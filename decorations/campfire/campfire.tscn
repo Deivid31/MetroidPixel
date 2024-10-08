@@ -1,0 +1,80 @@
+[gd_scene load_steps=14 format=3 uid="uid://vx7vlkse1jk"]
+
+[ext_resource type="Texture2D" uid="uid://dmhfnsi17ngl1" path="res://decorations/campfire/campfire_off.png" id="1_7fir5"]
+[ext_resource type="Texture2D" uid="uid://c0woxxknd7hqy" path="res://decorations/campfire/campfire_0001.png" id="2_mxohx"]
+[ext_resource type="Texture2D" uid="uid://bwlef7lpcpa6t" path="res://decorations/campfire/campfire_0002.png" id="3_rjnx3"]
+[ext_resource type="Texture2D" uid="uid://d1qfq3dtuiw3m" path="res://decorations/campfire/campfire_0003.png" id="4_t66lc"]
+[ext_resource type="Texture2D" uid="uid://dgvy7fn5xw4o2" path="res://decorations/campfire/campfire_0004.png" id="5_8kae8"]
+[ext_resource type="Texture2D" uid="uid://bde4ckg011xm0" path="res://decorations/campfire/campfire_0005.png" id="6_og726"]
+[ext_resource type="Texture2D" uid="uid://cerlwediwqsfr" path="res://decorations/campfire/campfire_0006.png" id="7_yj62o"]
+[ext_resource type="Texture2D" uid="uid://ds4sofdm2sqr5" path="res://decorations/campfire/campfire_0007.png" id="8_pdewd"]
+[ext_resource type="Texture2D" uid="uid://dxg7rh0ssvb27" path="res://decorations/campfire/campfire_0008.png" id="9_8bshw"]
+[ext_resource type="Script" path="res://decorations/campfire/campfire.gd" id="10_ftsol"]
+[ext_resource type="Texture2D" uid="uid://iwuf8tmebll3" path="res://indicators/exclamation/exclamation.png" id="11_ocya8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d1pyo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7fir5")
+}],
+"loop": false,
+"name": &"off",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mxohx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rjnx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_t66lc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8kae8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_og726")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_yj62o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pdewd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8bshw")
+}],
+"loop": true,
+"name": &"on",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_synx2"]
+size = Vector2(47.7083, 22.1667)
+
+[node name="Campfire" type="AnimatedSprite2D"]
+z_index = 1
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_d1pyo")
+animation = &"on"
+script = ExtResource("10_ftsol")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -1.667)
+shape = SubResource("RectangleShape2D_synx2")
+debug_color = Color(0.468319, 0.591011, 7.70092e-07, 0.42)
+
+[node name="exclamation" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 200
+position = Vector2(0, -12.8333)
+texture = ExtResource("11_ocya8")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
