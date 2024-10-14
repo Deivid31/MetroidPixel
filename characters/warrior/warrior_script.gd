@@ -7,8 +7,8 @@ var movement = true
 var gravity = 100
 var speed = 800
 
-var max_health
-var health
+var max_health = 3
+var health = max_health
 
 
 func _ready():
