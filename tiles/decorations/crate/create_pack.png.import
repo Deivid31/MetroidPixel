@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b038kk2rolrep"
-path="res://.godot/imported/fence_pack.png-cfe2eecf819001342365d0c4b5effee3.ctex"
+uid="uid://p5asd2sv5hal"
+path="res://.godot/imported/create_pack.png-02857cdc2d64a71b0acb840ae9fa1b05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles/decorations/fence/fence_pack.png"
-dest_files=["res://.godot/imported/fence_pack.png-cfe2eecf819001342365d0c4b5effee3.ctex"]
+source_file="res://tiles/decorations/crate/create_pack.png"
+dest_files=["res://.godot/imported/create_pack.png-02857cdc2d64a71b0acb840ae9fa1b05.ctex"]
 
 [params]
 
