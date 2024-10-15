@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728999054
+::res://::1728999253
 icon.png::CompressedTexture2D::6386233921937961406::1728313446::1728486591::1::::<><>::
 ::res://characters/::1728399680
 ::res://characters/axe/::1728399680
@@ -35,9 +35,9 @@ sword_0007.png::CompressedTexture2D::7135049253675301363::1728399680::1728486591
 warrior_walk_0001.png::CompressedTexture2D::4485517700499562477::1728399680::1728486591::1::::<><>::
 warrior_walk_0002.png::CompressedTexture2D::1961636312847730806::1728399680::1728486591::1::::<><>::
 ::res://decorations/::1728403275
-::res://decorations/campfire/::1728999053
+::res://decorations/campfire/::1728999117
 campfire.gd::GDScript::-1::1728999053::0::1::::<>AnimatedSprite2D<>::
-campfire.tscn::PackedScene::44806689535638116::1728999053::0::1::::<><>::uid://dmhfnsi17ngl1::::res://decorations/campfire/campfire_off.png<>uid://c0woxxknd7hqy::::res://decorations/campfire/campfire_0001.png<>uid://bwlef7lpcpa6t::::res://decorations/campfire/campfire_0002.png<>uid://d1qfq3dtuiw3m::::res://decorations/campfire/campfire_0003.png<>uid://dgvy7fn5xw4o2::::res://decorations/campfire/campfire_0004.png<>uid://bde4ckg011xm0::::res://decorations/campfire/campfire_0005.png<>uid://cerlwediwqsfr::::res://decorations/campfire/campfire_0006.png<>uid://ds4sofdm2sqr5::::res://decorations/campfire/campfire_0007.png<>uid://dxg7rh0ssvb27::::res://decorations/campfire/campfire_0008.png<>res://decorations/campfire/campfire.gd<>uid://iwuf8tmebll3::::res://indicators/exclamation/exclamation.png
+campfire.tscn::PackedScene::44806689535638116::1728999053::0::1::::<><>::res://decorations/campfire/campfire_off.png<>uid://b0q8ovbltlvb8::::res://decorations/campfire/campfire_0001.png<>uid://bncb6jsxjgb0i::::res://decorations/campfire/campfire_0002.png<>uid://tcxdmtvj1xrc::::res://decorations/campfire/campfire_0003.png<>uid://cp723p7jngq7y::::res://decorations/campfire/campfire_0004.png<>uid://c8kbrh42krw7n::::res://decorations/campfire/campfire_0005.png<>uid://bvvgydgyqdcek::::res://decorations/campfire/campfire_0006.png<>uid://cftojjm1wd64u::::res://decorations/campfire/campfire_0007.png<>uid://71o253e8ogip::::res://decorations/campfire/campfire_0008.png<>res://decorations/campfire/campfire.gd<>uid://iwuf8tmebll3::::res://indicators/exclamation/exclamation.png<>uid://c4qhnd4qlixgi::::res://particles/smoke/smoke.png
 campfire_0001.png::CompressedTexture2D::4176201585645623103::1728999053::1728999117::1::::<><>::
 campfire_0002.png::CompressedTexture2D::3303120984673370238::1728999053::1728999117::1::::<><>::
 campfire_0003.png::CompressedTexture2D::1339119293444783840::1728999053::1728999117::1::::<><>::
@@ -62,7 +62,7 @@ campfire_off.png::CompressedTexture2D::8016306578302046160::1728403275::17284865
 exclamation.png::CompressedTexture2D::608152091690889414::1728403275::1728486591::1::::<><>::
 ::res://maps/::1728999053
 test_map.gd::GDScript::-1::1728915941::0::1::::<>Node2D<>::
-::res://maps/test_map/::1728999054
+::res://maps/test_map/::1728999117
 background.png::CompressedTexture2D::8308057161048444937::1728999054::1728999117::1::::<><>::
 test_map.tscn::PackedScene::1954957943428818158::1728999054::0::1::::<><>::uid://b038kk2rolrep::::res://tiles/decorations/fence/fence_pack.png<>uid://w4sl5d7p7u13::::res://tiles/terrain/terrain_pack.png<>uid://p5asd2sv5hal::::res://tiles/decorations/crate/create_pack.png<>uid://blpaar276ow40::::res://characters/warrior/warrior.tscn<>uid://vx7vlkse1jk::::res://decorations/campfire/campfire.tscn<>uid://dqmqqtxolfpwj::::res://maps/test_map/background.png
 ::res://menus/::1728998966
@@ -72,16 +72,16 @@ pause.tscn::PackedScene::5924001369264584079::1728998966::0::1::::<><>::res://me
 ::res://npc/mysterious_seller/::1728400513
 ::res://npc/pigeon/::1728400360
 ::res://particles/::1728999054
-::res://particles/smoke/::1728999054
+::res://particles/smoke/::1728999117
 smoke.png::CompressedTexture2D::6841796314335612768::1728999054::1728999117::1::::<><>::
 ::res://random/::1728399680
 ::res://random/all_characters/::1728486591
 all_characters.png::CompressedTexture2D::805626091233553556::1728399680::1728486591::1::::<><>::
 ::res://tiles/::1728399681
 ::res://tiles/decorations/::1728999054
-::res://tiles/decorations/crate/::1728999054
+::res://tiles/decorations/crate/::1728999117
 create_pack.png::CompressedTexture2D::1114796331609424743::1728999054::1728999117::1::::<><>::
-::res://tiles/decorations/fence/::1728999054
+::res://tiles/decorations/fence/::1728999117
 fence_pack.png::CompressedTexture2D::4200966438192710387::1728999054::1728999117::1::::<><>::
 ::res://tiles/decorations/grass/::1728486591
 grass_bottom.png::CompressedTexture2D::2486154684973710708::1728399681::1728486591::1::::<><>::

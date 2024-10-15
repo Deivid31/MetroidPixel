@@ -70,6 +70,7 @@ position = Vector2(0, -8.33333)
 offset = Vector2(0, -50)
 
 [node name="Menu" parent="." instance=ExtResource("7_du41e")]
+visible = false
 offset_left = -55.5
 offset_top = -67.0
 offset_right = -55.5
