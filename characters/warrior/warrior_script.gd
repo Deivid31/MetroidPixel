@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 @onready var sword = get_node("Sword")
 @onready var sprite = get_node("Sprite")
+@onready var pause_menu = $Menu
+var paused = false
 
 var movement = true
 var gravity = 100
@@ -17,6 +19,8 @@ func _ready():
 
 func _process(delta):
 	velocity.y += gravity
+	if Input.is_action_just_pressed("pause"):
+		pauseMenu()
 	
 	if Input.is_action_pressed("move_left") and movement:
 		velocity.x = -speed
@@ -46,9 +50,14 @@ func _process(delta):
 		sword.attack(1, sprite.flip_h)
 		sprite.play("attack")
 	
-	
-	if Input.is_action_just_pressed("menu"):
-		get_tree().quit()
-	
 	move_and_slide()
 		
+func pauseMenu():
+	if paused:
+		pause_menu.hide()
+		get_tree().paused = false
+	else:
+		pause_menu.show()
+		get_tree().paused = true
+		
+	paused = !paused
