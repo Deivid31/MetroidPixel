@@ -9,10 +9,13 @@ func _process(delta):
 	if Input.is_action_just_pressed("interact"):
 		if %Exclamation.visible == true:
 			if animation == "on":
-				pass
+				pass #Para un futuro
 			else:
 				play("on")
 				%Smoke.emitting = true
+				%Exclamation.visible = false
+				await get_tree().create_timer(0.25).timeout
+				%Exclamation.visible = true
 
 
 func _on_area_2d_body_entered(body):

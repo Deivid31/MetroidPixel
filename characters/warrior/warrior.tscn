@@ -57,6 +57,7 @@ offset = Vector2(5, 0)
 flip_h = true
 
 [node name="HitBox" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(2.5, 0.583334)
 shape = SubResource("RectangleShape2D_4y1sy")
 
