@@ -68,7 +68,8 @@ position = Vector2(-3, 0)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -8.33333)
-offset = Vector2(0, -50)
+offset = Vector2(0, -100)
+zoom = Vector2(0.65, 0.65)
 
 [node name="Menu" parent="." instance=ExtResource("7_du41e")]
 visible = false
