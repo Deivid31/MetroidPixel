@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://blpaar276ow40"]
+[gd_scene load_steps=10 format=3 uid="uid://blpaar276ow40"]
 
 [ext_resource type="Script" path="res://characters/warrior/warrior_script.gd" id="1_m0xix"]
 [ext_resource type="Texture2D" uid="uid://cnqurw5s2r6p4" path="res://characters/warrior/idle/warrior_idle_0001.png" id="1_uec51"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b45226j36wvyj" path="res://characters/warrior/walk/warrior_walk_0001.png" id="4_18tva"]
 [ext_resource type="PackedScene" uid="uid://bkciy8i7jfgci" path="res://characters/warrior/sword/sword.tscn" id="4_71cy0"]
 [ext_resource type="Texture2D" uid="uid://27h4mf8lbd7s" path="res://characters/warrior/walk/warrior_walk_0002.png" id="5_2pbyh"]
+[ext_resource type="PackedScene" uid="uid://cqnvo4hudu4h4" path="res://menus/pause.tscn" id="7_du41e"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kwkp2"]
 animations = [{
@@ -57,6 +58,7 @@ offset = Vector2(5, 0)
 flip_h = true
 
 [node name="HitBox" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(2.5, 0.583334)
 shape = SubResource("RectangleShape2D_4y1sy")
 
@@ -66,4 +68,12 @@ position = Vector2(-3, 0)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -8.33333)
-offset = Vector2(0, -50)
+offset = Vector2(0, -100)
+zoom = Vector2(0.65, 0.65)
+
+[node name="Menu" parent="." instance=ExtResource("7_du41e")]
+visible = false
+offset_left = -55.5
+offset_top = -67.0
+offset_right = -55.5
+offset_bottom = -67.0

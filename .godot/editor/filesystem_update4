@@ -1,3 +1,4 @@
 res://maps/test_map/test_map.tscn
 res://characters/warrior/warrior.tscn
 res://decorations/campfire/campfire.tscn
+res://menus/pause.tscn

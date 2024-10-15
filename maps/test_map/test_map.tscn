@@ -1,8 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://2384vxrh3t8q"]
+[gd_scene load_steps=15 format=3 uid="uid://2384vxrh3t8q"]
 
+[ext_resource type="Texture2D" uid="uid://cicl62y0d323e" path="res://maps/test_map/paralax/background_1.png" id="1_4ok2p"]
 [ext_resource type="Texture2D" uid="uid://b038kk2rolrep" path="res://tiles/decorations/fence/fence_pack.png" id="1_rb7cf"]
+[ext_resource type="Texture2D" uid="uid://c6j64dnqx5jgd" path="res://maps/test_map/paralax/background_2.png" id="2_8a3dk"]
 [ext_resource type="Texture2D" uid="uid://w4sl5d7p7u13" path="res://tiles/terrain/terrain_pack.png" id="2_culii"]
+[ext_resource type="Texture2D" uid="uid://bvbdm8oposm1g" path="res://maps/test_map/paralax/background_3.png" id="3_2l6y0"]
 [ext_resource type="Texture2D" uid="uid://p5asd2sv5hal" path="res://tiles/decorations/crate/create_pack.png" id="3_y2q0r"]
+[ext_resource type="Texture2D" uid="uid://bylqn7c6bp8p6" path="res://maps/test_map/paralax/background_4.png" id="4_0aj3t"]
 [ext_resource type="PackedScene" uid="uid://blpaar276ow40" path="res://characters/warrior/warrior.tscn" id="4_05s1w"]
 [ext_resource type="PackedScene" uid="uid://vx7vlkse1jk" path="res://decorations/campfire/campfire.tscn" id="5_vmha5"]
 [ext_resource type="Texture2D" uid="uid://dqmqqtxolfpwj" path="res://maps/test_map/background.png" id="6_61hxd"]
@@ -90,21 +94,94 @@ sources/2 = SubResource("TileSetAtlasSource_hms4q")
 
 [node name="test_map" type="Node2D"]
 
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.1, 0)
+motion_mirroring = Vector2(4800, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_4ok2p")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.1, 0)
+motion_offset = Vector2(2400, 0)
+motion_mirroring = Vector2(4800, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_4ok2p")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.075, 0)
+motion_mirroring = Vector2(4800, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+scale = Vector2(2, 2)
+texture = ExtResource("2_8a3dk")
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.075, 0)
+motion_offset = Vector2(2400, 0)
+motion_mirroring = Vector2(4800, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6"]
+scale = Vector2(2, 2)
+texture = ExtResource("2_8a3dk")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.15, 0)
+motion_mirroring = Vector2(4800, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+scale = Vector2(2, 2)
+texture = ExtResource("3_2l6y0")
+
+[node name="ParallaxLayer7" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.15, 0)
+motion_offset = Vector2(2400, 0)
+motion_mirroring = Vector2(4800, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer7"]
+scale = Vector2(2, 2)
+texture = ExtResource("3_2l6y0")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.3, 0)
+motion_mirroring = Vector2(4800, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+scale = Vector2(2, 2)
+texture = ExtResource("4_0aj3t")
+
+[node name="ParallaxLayer8" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.3, 0)
+motion_offset = Vector2(2400, 0)
+motion_mirroring = Vector2(4800, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer8"]
+scale = Vector2(2, 2)
+texture = ExtResource("4_0aj3t")
+
 [node name="Background" type="Sprite2D" parent="."]
 unique_name_in_owner = true
+visible = false
 position = Vector2(835, 152)
 scale = Vector2(248.85, 6)
 texture = ExtResource("6_61hxd")
-
-[node name="TileMap" type="TileMap" parent="."]
-texture_filter = 1
-scale = Vector2(6, 6)
-tile_set = SubResource("TileSet_6rwd2")
-format = 2
-layer_0/tile_data = PackedInt32Array(458754, 1, 2, 524290, 1, 2, 589826, 1, 2, 655362, 1, 2, 458755, 65537, 2, 524291, 65537, 2, 589827, 65537, 2, 655363, 65537, 2, 458756, 393217, 5, 524292, 65537, 2, 589828, 65537, 2, 655364, 65537, 2, 458757, 65537, 1, 524293, 65537, 2, 655365, 65537, 2, 458758, 65537, 1, 524294, 65537, 2, 589830, 65537, 2, 655366, 65537, 2, 524295, 65537, 2, 589831, 65537, 2, 655367, 65537, 2, 327688, 196609, 1, 458760, 65537, 1, 524296, 65537, 2, 589832, 65537, 2, 655368, 65537, 2, 327689, 327681, 1, 524297, 65537, 2, 589833, 65537, 2, 655369, 65537, 2, 458762, 65537, 1, 524298, 65537, 2, 589834, 65537, 2, 655370, 65537, 2, 458763, 65537, 1, 589835, 65537, 2, 655371, 65537, 2, 458764, 65537, 1, 589836, 65537, 2, 655372, 65537, 2, 262157, 1, 1, 327693, 1, 2, 524301, 65537, 2, 589837, 65537, 2, 655373, 65537, 2, 262158, 65537, 1, 327694, 65537, 2, 393230, 65537, 2, 458766, 65537, 2, 524302, 65537, 2, 589838, 65537, 2, 655374, 65537, 2, 262159, 131073, 1, 327695, 131073, 2, 393231, 131073, 2, 458767, 131073, 2, 524303, 131073, 2, 589839, 131073, 2, 655375, 131073, 2, 524299, 65537, 2, 524300, 65537, 2, 393218, 1, 1, 393219, 65537, 1, 458761, 65537, 1, 458765, 327681, 5, 458759, 65537, 1, 393229, 1, 2, 393228, 131072, 0, 393220, 131073, 1, 589829, 65537, 2, 393221, 0, 0, 393222, 65536, 0, 393223, 65536, 0, 393224, 65536, 0, 393225, 65536, 0, 393226, 65536, 0, 393227, 65536, 0)
 
 [node name="Warrior" parent="." instance=ExtResource("4_05s1w")]
 position = Vector2(320, 521)
 
 [node name="Campfire" parent="." instance=ExtResource("5_vmha5")]
+z_index = 3
 position = Vector2(1391, 330)
+
+[node name="TileMap" type="TileMap" parent="."]
+z_index = 3
+texture_filter = 1
+scale = Vector2(6, 6)
+tile_set = SubResource("TileSet_6rwd2")
+format = 2
+layer_0/tile_data = PackedInt32Array(458754, 1, 2, 524290, 1, 2, 589826, 1, 2, 655362, 1, 2, 458755, 65537, 2, 524291, 65537, 2, 589827, 65537, 2, 655363, 65537, 2, 458756, 393217, 5, 524292, 65537, 2, 589828, 65537, 2, 655364, 65537, 2, 458757, 65537, 1, 524293, 65537, 2, 655365, 65537, 2, 458758, 65537, 1, 524294, 65537, 2, 589830, 65537, 2, 655366, 65537, 2, 524295, 65537, 2, 589831, 65537, 2, 655367, 65537, 2, 327688, 196609, 1, 458760, 65537, 1, 524296, 65537, 2, 589832, 65537, 2, 655368, 65537, 2, 327689, 327681, 1, 524297, 65537, 2, 589833, 65537, 2, 655369, 65537, 2, 458762, 65537, 1, 524298, 65537, 2, 589834, 65537, 2, 655370, 65537, 2, 458763, 65537, 1, 589835, 65537, 2, 655371, 65537, 2, 458764, 65537, 1, 589836, 65537, 2, 655372, 65537, 2, 262157, 1, 1, 327693, 1, 2, 524301, 65537, 2, 589837, 65537, 2, 655373, 65537, 2, 262158, 65537, 1, 327694, 65537, 2, 393230, 65537, 2, 458766, 65537, 2, 524302, 65537, 2, 589838, 65537, 2, 655374, 65537, 2, 262159, 131073, 1, 327695, 131073, 2, 393231, 131073, 2, 458767, 131073, 2, 524303, 131073, 2, 589839, 131073, 2, 655375, 131073, 2, 524299, 65537, 2, 524300, 65537, 2, 393219, 65537, 1, 458761, 65537, 1, 458765, 327681, 5, 458759, 65537, 1, 393229, 1, 2, 393228, 131072, 0, 393220, 131073, 1, 589829, 65537, 2, 393221, 0, 0, 393222, 65536, 0, 393223, 65536, 0, 393224, 65536, 0, 393225, 65536, 0, 393226, 65536, 0, 393227, 65536, 0, 393218, 1, 1)
