@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://vx7vlkse1jk"]
 
-[ext_resource type="Texture2D" path="res://decorations/campfire/campfire_off.png" id="1_7fir5"]
+[ext_resource type="Texture2D" uid="uid://dmhfnsi17ngl1" path="res://decorations/campfire/campfire_off.png" id="1_7fir5"]
 [ext_resource type="Texture2D" uid="uid://b0q8ovbltlvb8" path="res://decorations/campfire/campfire_0001.png" id="2_mxohx"]
 [ext_resource type="Texture2D" uid="uid://bncb6jsxjgb0i" path="res://decorations/campfire/campfire_0002.png" id="3_rjnx3"]
 [ext_resource type="Texture2D" uid="uid://tcxdmtvj1xrc" path="res://decorations/campfire/campfire_0003.png" id="4_t66lc"]
