@@ -72,6 +72,7 @@ offset = Vector2(0, -100)
 zoom = Vector2(0.65, 0.65)
 
 [node name="Menu" parent="." instance=ExtResource("7_du41e")]
+unique_name_in_owner = true
 visible = false
 offset_left = -55.5
 offset_top = -67.0
