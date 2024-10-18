@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var sword = get_node("Sword")
 @onready var sprite = get_node("Sprite")
-@onready var pause_menu = $Menu
+@onready var pause_menu = %Menu
 var paused = false
 
 var movement = true

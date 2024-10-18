@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmdkcvh7qyufh"
-path="res://.godot/imported/4.png-c689cafe6f0c551fc9b48be3a4fb2fce.ctex"
+uid="uid://b3bysf76ph6jk"
+path="res://.godot/imported/wood_sign.png-f9db491487f046c0c9257d945c0fb8cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://maps/test_map/paralax/4.png"
-dest_files=["res://.godot/imported/4.png-c689cafe6f0c551fc9b48be3a4fb2fce.ctex"]
+source_file="res://decorations/sign/wood_sign.png"
+dest_files=["res://.godot/imported/wood_sign.png-f9db491487f046c0c9257d945c0fb8cd.ctex"]
 
 [params]
 
