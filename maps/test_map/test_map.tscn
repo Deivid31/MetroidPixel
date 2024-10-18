@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://2384vxrh3t8q"]
+[gd_scene load_steps=14 format=3 uid="uid://2384vxrh3t8q"]
 
 [ext_resource type="Texture2D" uid="uid://cicl62y0d323e" path="res://maps/test_map/paralax/background_1.png" id="1_4ok2p"]
 [ext_resource type="Texture2D" uid="uid://b038kk2rolrep" path="res://tiles/decorations/fence/fence_pack.png" id="1_rb7cf"]
@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://bylqn7c6bp8p6" path="res://maps/test_map/paralax/background_4.png" id="4_0aj3t"]
 [ext_resource type="PackedScene" uid="uid://blpaar276ow40" path="res://characters/warrior/warrior.tscn" id="4_05s1w"]
 [ext_resource type="PackedScene" uid="uid://vx7vlkse1jk" path="res://decorations/campfire/campfire.tscn" id="5_vmha5"]
-[ext_resource type="Texture2D" uid="uid://dqmqqtxolfpwj" path="res://maps/test_map/background.png" id="6_61hxd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_etls0"]
 texture = ExtResource("1_rb7cf")
@@ -307,13 +306,6 @@ motion_mirroring = Vector2(4800, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4_4"]
 texture = ExtResource("4_0aj3t")
-
-[node name="Background" type="Sprite2D" parent="."]
-unique_name_in_owner = true
-visible = false
-position = Vector2(835, 152)
-scale = Vector2(248.85, 6)
-texture = ExtResource("6_61hxd")
 
 [node name="Warrior" parent="." instance=ExtResource("4_05s1w")]
 position = Vector2(320, 521)
