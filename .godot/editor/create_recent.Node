@@ -1,6 +1,8 @@
-PanelContainer
+RichTextLabel
 Panel
+CanvasLayer
 Sprite2D
+PanelContainer
 ParallaxLayer
 ParallaxBackground
 CPUParticles2D

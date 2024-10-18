@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://mg02x7c5d582"]
+
+[ext_resource type="Texture2D" uid="uid://b3bysf76ph6jk" path="res://decorations/sign/wood_sign.png" id="1_houyj"]
+[ext_resource type="Script" path="res://decorations/sign/sign.gd" id="2_ouskx"]
+[ext_resource type="Texture2D" uid="uid://iwuf8tmebll3" path="res://indicators/exclamation/exclamation.png" id="3_fyudv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ex1rk"]
+size = Vector2(47.7083, 29.2766)
+
+[node name="Sign" type="Sprite2D"]
+position = Vector2(1, 4.76837e-07)
+scale = Vector2(3.0625, 3.125)
+texture = ExtResource("1_houyj")
+script = ExtResource("2_ouskx")
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+position = Vector2(0.32653, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(4.76837e-07, 0)
+shape = SubResource("RectangleShape2D_ex1rk")
+debug_color = Color(0.468319, 0.591011, 7.70092e-07, 0.42)
+
+[node name="Exclamation" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+z_index = 200
+position = Vector2(1.30612, -25.6)
+texture = ExtResource("3_fyudv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="DialogueBox" type="Panel" parent="CanvasLayer"]
+offset_left = -86.0
+offset_top = -136.0
+offset_right = 94.0
+offset_bottom = -52.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/DialogueBox"]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 178.0
+offset_bottom = 82.0
+bbcode_enabled = true
+text = ":)"
