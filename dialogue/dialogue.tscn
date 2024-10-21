@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://7xf2w0tdjlcc"]
+[gd_scene load_steps=4 format=3 uid="uid://7xf2w0tdjlcc"]
 
 [ext_resource type="Texture2D" uid="uid://cjbdoufmh4vaf" path="res://tiles/dialogue/dialogue_background.png" id="1_45c85"]
 [ext_resource type="Script" path="res://dialogue/dialogue.gd" id="1_d5spt"]
+[ext_resource type="FontFile" uid="uid://byvrfi75yk1wk" path="res://fonts/connection_ii/ConnectionII.otf" id="3_ko33j"]
 
 [node name="Dialogue" type="Control"]
 layout_mode = 3
@@ -31,9 +32,11 @@ offset_left = 11.0
 offset_top = 10.0
 offset_right = 784.0
 offset_bottom = 138.0
+theme_override_fonts/normal_font = ExtResource("3_ko33j")
+theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.4
+wait_time = 0.04
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

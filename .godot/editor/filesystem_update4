@@ -1,7 +1,6 @@
-res://dialogue/dialogue.tscn
-res://dialogue/dialogue.gd
 res://maps/test_map/test_map.tscn
 res://characters/warrior/warrior.tscn
 res://decorations/campfire/campfire.tscn
 res://menus/pause.tscn
 res://decorations/sign/sign.tscn
+res://dialogue/dialogue.tscn
