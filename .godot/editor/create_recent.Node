@@ -1,4 +1,6 @@
 RichTextLabel
+Timer
+NinePatchRect
 Panel
 CanvasLayer
 Sprite2D
