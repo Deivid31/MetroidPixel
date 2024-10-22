@@ -1,5 +1,6 @@
-RichTextLabel
 Timer
+Node
+RichTextLabel
 NinePatchRect
 Panel
 CanvasLayer
