@@ -28,7 +28,7 @@ func _extract_tags(from_string: String) -> String:
 	_custom_regex.compile("({(.*?)})")
 	return _custom_regex.sub(from_string, "", true)
 
-func check_at_position(from_int: int) -> String:
+func check_at_position(from_int: int) -> void:
 	for _pause in _pauses:
-		if _pause.pause_pos == pos:
+		if _pause.pause_pos == from_int:
 			emit_signal("pause_requested", _pause.duration)

@@ -17,7 +17,7 @@ func update_message(message: String) -> void:
 	type_timer.start()
 	
 func _on_timer_timeout() -> void:
-	pause_calculator.check_at_position(content.visible_characters)
+	_calc.check_at_position(content.visible_characters)
 	if content.visible_characters < content.text.length():
 		content.visible_characters += 1
 	else:
