@@ -1,7 +1,8 @@
-Timer
 Node
+Timer
 RichTextLabel
 NinePatchRect
+Control
 Panel
 CanvasLayer
 Sprite2D
@@ -11,4 +12,3 @@ ParallaxBackground
 CPUParticles2D
 AnimatedSprite2D
 Area2D
-CollisionShape2D
