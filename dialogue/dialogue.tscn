@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cevvldwxns7ta" path="res://dialogue/pause_calculator.tscn" id="4_ji3q1"]
 [ext_resource type="Script" path="res://dialogue/check_Pause.gd" id="4_odoup"]
 
+
 [sub_resource type="GDScript" id="GDScript_0m2ey"]
 script/source = "
 "
